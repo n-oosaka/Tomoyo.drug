@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+  color: #333;/* 少し明るい黒にして見やすく */
+  background: #f59b008e;
+  user-select: none;
+  text-align: center;
+}
+
+main {
+  margin: 20px auto;
+  width: 300px;
+  background: #f59b00a9;
+  padding: 15px 30px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+}
+
+.btn {
+  text-decoration: none;
+  background: #fff;
+  color: #f59a00;
+  border: 1px solid;
+  display: block;
+  width: 138px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  text-align: center;
+  user-select: none;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.mes {
+  text-decoration: none;
+  color: #333;/* 少し明るい黒にして見やすく */
+  display: block;
+  width: 130px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.drunk {
+  text-decoration: none;
+  color: #333;/* 少し明るい黒にして見やすく */
+  display: block;
+  width: 138px;
+  font-weight: bold;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0 8px;
+  line-height: 45px;
+}
+
+footer {
+  padding: 16px 0;
+  background: #323135;
+  color: #98969c;
+  text-align: center;
+}
