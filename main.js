@@ -51,9 +51,10 @@
       // localStorage.removeItem('drankEvening.text');
       
       // F12 Application -> Storage -> Local Storage で中身が確認できる
-      // 前回保存日と今日の日付が一致しない場合、削除
+      // 前回保存日と今日の日付が一致しない かつ 3時以降の場合、削除
       var strValue = localStorage.getItem('drunkDate.text');
-      if (strValue !== `${getDate()}`) {
+      // if (strValue !== `${getDate()}`) {
+      if ((strValue !== `${getDate()}`) && (Number(`${getHour()}`) >= 3)) {
         localStorage.removeItem(`${this.className}.text`);
       } else {
         // 同じ日付の場合はデータを読み込む
@@ -85,6 +86,12 @@
     const m = String(d.getMinutes()).padStart(2, '0');
     
     return h + ":" + m;
+  }
+
+  function getHour() {
+    const d = new Date(Date.now());
+    var hour = d.getHours();
+    return hour;
   }
 
   function getDate() {
